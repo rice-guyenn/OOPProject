@@ -1,6 +1,5 @@
+#include "stdafx.h"
 #include "Grid.h"
-
-
 Grid::Grid(int w, int h){
 	width = w;
 	height = h;
@@ -29,4 +28,5 @@ int Grid::addCell(Cell cell){
 	int x = cell.getX();
 	int y = cell.getY();
 	cells[x][y] = cell;
+	return 1;
 }
